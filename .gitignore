@@ -1,0 +1,17 @@
+
+# Ignore Sphinx build output
+docs/build/
+docs/_build/
+
+# Ignore temporary files
+*.pyc
+__pycache__/
+
+# (Optional) Ignore editor files
+.vscode/
+.idea/
+.DS_Store
+
+.venv
+
+
