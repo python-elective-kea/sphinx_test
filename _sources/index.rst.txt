@@ -3,17 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-clbo test documentation
-=======================
-
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+Introduktion til Python efterår 2025
+====================================
 
 .. toctree::
    :maxdepth: 2
-   :numbered:  
+   :caption: Contents:
    
-   intro  
-   hello
-   notebook
+   ses1
+   ses2
+   ses3
+   ses4
+   ses5
+   ses6
+   ses7
+   ses8
+   ses9
+   ses10
+   ses11
+   ses12
+   ses13
+   ses14
