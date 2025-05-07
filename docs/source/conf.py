@@ -36,7 +36,7 @@ html_css_files = [
 
 html_context = {
     "display_github": True,
-    "github_url" : "https://github.com/python-elective-kea/sphinx_test/docs",
+    #"github_url" : "https://github.com/python-elective-kea/sphinx_test/docs",
 
     # Set the following variables to generate the resulting github URL for each page. 
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}
