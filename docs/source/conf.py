@@ -42,9 +42,9 @@ html_context = {
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}
     #/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
     #https://github.com/runawayhorse001/SphinxGithub/blob/master/doc/index.rst
-    #'github_user': 'python-elective-kea',
-    #'github_repo': 'sphinx_test',
-    #'github_version': 'master/source/' ,
+    'github_user': 'python-elective-kea',
+    'github_repo': 'sphinx_test',
+    'github_version': 'master/source/' ,
 
 }
 
