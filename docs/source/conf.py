@@ -36,14 +36,14 @@ html_css_files = [
 
 html_context = {
     "display_github": True,
-    "github_url" : "https://github.com/ITAKEA/e2024_swa",
+    "github_url" : "https://github.com/python-elective-kea/sphinx_test",
 
     # Set the following variables to generate the resulting github URL for each page. 
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}
     #/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
     #https://github.com/runawayhorse001/SphinxGithub/blob/master/doc/index.rst
-    'github_user': 'itakea',
-    'github_repo': 'e2024_swa',
+    'github_user': 'python-elective-kea',
+    'github_repo': 'sphinx_test',
     'github_version': 'master/source/' ,
 
 }
