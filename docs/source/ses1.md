@@ -1,20 +1,20 @@
 # Session 1 - Introduktion til python
 
-This first week of this elective will be used for introducing this elective and making sure that you all have the software needed to follow along.
+Den første uge af dette valgfag vil blive brugt til at introducere valgfaget og sikre, at I alle har den nødvendige software til at følge med.
 
-The first part of today will be an "overview" and "installation" day. We need to be on the same level before we start. You will furthermore get an introduction to the unix filesystem and commandline and you will have exercises in controling your computer through the commandline.  
+Den første del af i dag vil handle om "oversigt" og "installations". Vi skal være på samme niveau, før vi starter. I vil desuden få en introduktion til unix-filsystemet og kommandolinjen, og I vil have øvelser i at styre jeres computer gennem kommandolinjen.
 
-In the second part you will get an overview of the python language and you will start to get familiar with the language and the development enviroment. We will focus this first lesson on strings and string manipulations. 
+I den anden del vil I få en oversigt over Python-sproget, og I vil begynde at blive fortrolige med sproget og udviklingsmiljøet. Vi vil fokusere denne første lektion på strenge og strengmanipulationer.
 
-Learning goals
---------------
+## Learning goals
 
-After this week you will:
+
+Efter denne uge vil du:
         
-    - Have an overview of how this elective is structured, and what you can expeted to learn during this semester.
-    - Have a basic understanding of a python development enviroment, and know how to use it.
-    - Be able to control your computer through its command line.
-    - Be able to work with python strings, conditions and functions.      
+- Have an overview of how this elective is structured, and what you can expeted to learn during this semester.
+- Have a basic understanding of a python development enviroment, and know how to use it.
+- Be able to control your computer through its command line.
+- Be able to work with python strings, conditions and functions.      
 
 Materials
 ---------
