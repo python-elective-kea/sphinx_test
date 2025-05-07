@@ -16,3 +16,4 @@ documentation for details.
    
    intro  
    hello
+   notebook
