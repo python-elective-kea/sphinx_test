@@ -29,3 +29,26 @@ exclude_patterns = []
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_show_sourcelink = True
+
+html_css_files = [
+    'css/custom.css',
+]
+
+html_context = {
+    "display_github": True,
+    "github_url" : "https://github.com/ITAKEA/e2024_swa",
+
+    # Set the following variables to generate the resulting github URL for each page. 
+    # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}
+    #/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
+    #https://github.com/runawayhorse001/SphinxGithub/blob/master/doc/index.rst
+    'github_user': 'itakea',
+    'github_repo': 'e2024_swa',
+    'github_version': 'master/source/' ,
+
+}
+
+html_theme_options = {
+    "repository_url": "https://github.com/ITAKEA/e24_swa.git",
+    "use_repository_button": True,
+}
