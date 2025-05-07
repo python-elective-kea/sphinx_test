@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'clbo test'
+project = 'Introduktion til python E2025'
 copyright = '2025, clbo'
 author = 'clbo'
 release = '12.1.24'
@@ -28,11 +28,11 @@ exclude_patterns = []
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-html_show_sourcelink = True
+html_show_sourcelink = False
 
-html_css_files = [
-    'css/custom.css',
-]
+#html_css_files = [
+#    'css/custom.css',
+#]
 
 html_context = {
     "display_github": True,
