@@ -1,20 +1,52 @@
 # Session 1 - Introduktion til python
 
-Den første uge af dette valgfag vil blive brugt til at introducere valgfaget og sikre, at I alle har den nødvendige software til at følge med.
+Velkommen til den første undervsningsgang i valgfaget "Introduktion til python". 
+I dag er en "kom i gang" dag.     
+I skal have et overblik over forløbet.     
+Hvad kommer i til at lære, og hvordan kommer i til at lære det.     
+Hvad skal i kunne til den afsluttende eksamen, og hvordan kommer eksamenen til at foregå.     
+Alle sådanne praktike informationer går vi igennem i dag.    
 
-Den første del af i dag vil handle om "oversigt" og "installations". Vi skal være på samme niveau, før vi starter. I vil desuden få en introduktion til unix-filsystemet og kommandolinjen, og I vil have øvelser i at styre jeres computer gennem kommandolinjen.
+Alt materialet til dette valgfag ligger på dette website.     
+Hver undervisningsgang, eller session har en side.     
+Sessionerne kan i se i menuen til venstre.    
 
-I den anden del vil I få en oversigt over Python-sproget, og I vil begynde at blive fortrolige med sproget og udviklingsmiljøet. Vi vil fokusere denne første lektion på strenge og strengmanipulationer.
+Siderne er alle bygget op som den i læser nu.     
+Meningen er at I, i god tid inden undervisningen skal læse, fra oven på siden og indtil vi når til punktet "Dagen i dag".     
+Fra "Dagen i dag" og siden ned, er så det vi laver i klasselokalet.     
 
-## Learning goals
+Noget af det første i stødder på er Læringsmålene.     
+Læringsmålene er som de andtyder det i kan forvente (og som i forventes) at kunne når dagen/ugen er omme.     
+For denne session, eller denne uge ser læringsmålenen sådan ud:    
 
-
+## Læringsmål
 Efter denne uge vil du:
-        
-- Have an overview of how this elective is structured, and what you can expeted to learn during this semester.
-- Have a basic understanding of a python development enviroment, and know how to use it.
-- Be able to control your computer through its command line.
-- Be able to work with python strings, conditions and functions.      
+* Have et overblik over hvordan dette valgfag er struktureret. 
+* Have et oveblik over hvad du kan forvente at lære gennem dette semester.         
+* Have en overordnet forståelse for forskellige python udvikliksmiljøer (development environments), og vide hvordan du skal bruge dem. 
+* Være i stand til at arbejde med python strings, betingelser og funktioner. 
+
+Måden i skal bruge dem på er dels til at få et overblik over sessionen, dels til at tjekke jeres egen læring.     
+Så hvis et læringsmål siger:    
+ 
+* Have en overordnet forståelse for forskellige python udvikliksmiljøer (development environments), og vide hvordan i skal bruge dem. 
+
+Skal i gerne vide at vi bruger VS Code i dette valgfag, og i VS Code laver man en script.py fil med python kode og man eksekverer koden ved at skrive `python3 script.py` i terminalen.     
+Hvis i for eksempel ikke har helt styr på hvordan de 2 andre muligheder vi har gennemgået bruges, skal i bruge lidt mere tid på at undersøge det. 
+
+Når i kommer til eksamenen i slutningen af dette semester er det også disse læringsmål plus alle andre læringsmål fra de andre sessioner i vil blive vurderet på i hvor høj grad i opfylder eller ikke.     
+
+Så overblik er overskriften på den første del af denne dag.     
+
+I den anden del skal vi igang med at kode.    
+I vil begynde at blive fortrolige med sproget og udviklingsmiljøet.     
+I denne første session vil vi fokusere på strenge og strengmanipulationer, betingelse og funktioner.
+
+## Dagen i dag
+
+Vi starter med at gå igennem disse [slides]()
+
+
 
 Materials
 ---------
@@ -41,3 +73,6 @@ Quizes
 * `Splitting, Concatenating, and Joining Strings in Python Quiz <https://realpython.com/quizzes/python-split-strings/>`_
 * `Command line Crash Course <_static/CommandLineCrashCourse.pdf>`_ 
 
+
+## Referenceliste
+Her under har du a samlet liste af alle links og eksterne resourcer brugt her på siden. 
