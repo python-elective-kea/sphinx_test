@@ -1,106 +1,376 @@
 
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="./">
-<head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Session 1 - Introduktion til python &mdash; Introduktion til python E2025 12.1.24 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Session 1 - Introduktion til python &#8212; Introduktion til python E2025 12.1.24 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-      <script src="_static/jquery.js?v=5d32c60e"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=1eb69ef4"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script>let toggleHintShow = 'Click to show';</script>
-      <script>let toggleHintHide = 'Click to hide';</script>
-      <script>let toggleOpenOnPrint = 'true';</script>
-      <script src="_static/togglebutton.js?v=4a39c7ea"></script>
-      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/js/theme.js"></script>
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=ed478655"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ses1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Introduktion til Python efterår 2025" href="index.html" /> 
-</head>
+    <link rel="prev" title="Introduktion til Python efterår 2025" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-          
-          
-          <a href="index.html" class="icon icon-home">
-            Introduktion til python E2025
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Session 1 - Introduktion til python</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#learning-goals">Learning goals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#quizes">Quizes</a></li>
-</ul>
-</li>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduktion til python E2025 12.1.24 documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Session 1 - Introduktion til python</a></li>
 </ul>
 
-        </div>
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
       </div>
-    </nav>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Introduktion til python E2025</a>
-      </nav>
+<div class="sbt-scroll-pixel-helper"></div>
 
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Session 1 - Introduktion til python</li>
-      <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/python-elective-kea/sphinx_test/blob/main/docs/source/ses1.md" class="fa fa-github"> Edit on GitHub</a>
-      </li>
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/ITAKEA/e24_swa.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/ses1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
   </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Session 1 - Introduktion til python</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laeringsmal">Læringsmål</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dagen-i-dag">Dagen i dag</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quizes">Quizes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referenceliste">Referenceliste</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
   <section id="session-1-introduktion-til-python">
-<h1>Session 1 - Introduktion til python<a class="headerlink" href="#session-1-introduktion-til-python" title="Link to this heading"></a></h1>
-<p>Den første uge af dette valgfag vil blive brugt til at introducere valgfaget og sikre, at I alle har den nødvendige software til at følge med.</p>
-<p>Den første del af i dag vil handle om “oversigt” og “installations”. Vi skal være på samme niveau, før vi starter. I vil desuden få en introduktion til unix-filsystemet og kommandolinjen, og I vil have øvelser i at styre jeres computer gennem kommandolinjen.</p>
-<p>I den anden del vil I få en oversigt over Python-sproget, og I vil begynde at blive fortrolige med sproget og udviklingsmiljøet. Vi vil fokusere denne første lektion på strenge og strengmanipulationer.</p>
-<section id="learning-goals">
-<h2>Learning goals<a class="headerlink" href="#learning-goals" title="Link to this heading"></a></h2>
+<h1>Session 1 - Introduktion til python<a class="headerlink" href="#session-1-introduktion-til-python" title="Link to this heading">#</a></h1>
+<p>Velkommen til den første undervsningsgang i valgfaget “Introduktion til python”.
+I dag er en “kom i gang” dag.<br />I skal have et overblik over forløbet.<br />Hvad kommer i til at lære, og hvordan kommer i til at lære det.<br />Hvad skal i kunne til den afsluttende eksamen, og hvordan kommer eksamenen til at foregå.<br />Alle sådanne praktike informationer går vi igennem i dag.</p>
+<p>Alt materialet til dette valgfag ligger på dette website.<br />Hver undervisningsgang, eller session har en side.<br />Sessionerne kan i se i menuen til venstre.</p>
+<p>Siderne er alle bygget op som den i læser nu.<br />Meningen er at I, i god tid inden undervisningen skal læse, fra oven på siden og indtil vi når til punktet “Dagen i dag”.<br />Fra “Dagen i dag” og siden ned, er så det vi laver i klasselokalet.</p>
+<p>Noget af det første i stødder på er Læringsmålene.<br />Læringsmålene er som de andtyder det i kan forvente (og som i forventes) at kunne når dagen/ugen er omme.<br />For denne session, eller denne uge ser læringsmålenen sådan ud:</p>
+<section id="laeringsmal">
+<h2>Læringsmål<a class="headerlink" href="#laeringsmal" title="Link to this heading">#</a></h2>
 <p>Efter denne uge vil du:</p>
 <ul class="simple">
-<li><p>Have an overview of how this elective is structured, and what you can expeted to learn during this semester.</p></li>
-<li><p>Have a basic understanding of a python development enviroment, and know how to use it.</p></li>
-<li><p>Be able to control your computer through its command line.</p></li>
-<li><p>Be able to work with python strings, conditions and functions.</p></li>
+<li><p>Have et overblik over hvordan dette valgfag er struktureret.</p></li>
+<li><p>Have et oveblik over hvad du kan forvente at lære gennem dette semester.</p></li>
+<li><p>Have en overordnet forståelse for forskellige python udvikliksmiljøer (development environments), og vide hvordan du skal bruge dem.</p></li>
+<li><p>Være i stand til at arbejde med python strings, betingelser og funktioner.</p></li>
 </ul>
+<p>Måden i skal bruge dem på er dels til at få et overblik over sessionen, dels til at tjekke jeres egen læring.<br />Så hvis et læringsmål siger:</p>
+<ul class="simple">
+<li><p>Have en overordnet forståelse for forskellige python udvikliksmiljøer (development environments), og vide hvordan i skal bruge dem.</p></li>
+</ul>
+<p>Skal i gerne vide at vi bruger VS Code i dette valgfag, og i VS Code laver man en script.py fil med python kode og man eksekverer koden ved at skrive <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">script.py</span></code> i terminalen.<br />Hvis i for eksempel ikke har helt styr på hvordan de 2 andre muligheder vi har gennemgået bruges, skal i bruge lidt mere tid på at undersøge det.</p>
+<p>Når i kommer til eksamenen i slutningen af dette semester er det også disse læringsmål plus alle andre læringsmål fra de andre sessioner i vil blive vurderet på i hvor høj grad i opfylder eller ikke.</p>
+<p>Så overblik er overskriften på den første del af denne dag.</p>
+<p>I den anden del skal vi igang med at kode.<br />I vil begynde at blive fortrolige med sproget og udviklingsmiljøet.<br />I denne første session vil vi fokusere på strenge og strengmanipulationer, betingelse og funktioner.</p>
+</section>
+<section id="dagen-i-dag">
+<h2>Dagen i dag<a class="headerlink" href="#dagen-i-dag" title="Link to this heading">#</a></h2>
+<p>Vi starter med at gå igennem disse <a class="reference external" href="#">slides</a></p>
 </section>
 <section id="materials">
-<h2>Materials<a class="headerlink" href="#materials" title="Link to this heading"></a></h2>
+<h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Installations</span> <span class="pre">&lt;notebooks/installation.md&gt;</span></code>_</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Unix</span> <span class="pre">commands</span> <span class="pre">and</span> <span class="pre">file</span> <span class="pre">system</span> <span class="pre">&lt;notebooks/unix_commands.md&gt;</span></code>_</p></li>
@@ -114,7 +384,7 @@
 </ul>
 </section>
 <section id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading"></a></h2>
+<h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Exercise</span> <span class="pre">1:</span> <span class="pre">Unix</span> <span class="pre">Commands</span> <span class="pre">&lt;exercises/unix_commands/unix_commands.md&gt;</span></code>_ (<code class="docutils literal notranslate"><span class="pre">Solution</span> <span class="pre">&lt;exercises/solution/01_strings/unix.rst&gt;</span></code>_ (is online Monday))</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exercise</span> <span class="pre">2:</span> <span class="pre">Strings1</span> <span class="pre">&amp;</span> <span class="pre">Strings2</span> <span class="pre">&lt;exercises/strings/strings.rst&gt;</span></code>_  (<code class="docutils literal notranslate"><span class="pre">Solution</span> <span class="pre">&lt;exercises/solution/01_strings/strings.rst&gt;</span></code>_ (is online Monday))</p></li>
@@ -122,43 +392,113 @@
 </section>
 <hr class="docutils" />
 <section id="quizes">
-<h2>Quizes<a class="headerlink" href="#quizes" title="Link to this heading"></a></h2>
+<h2>Quizes<a class="headerlink" href="#quizes" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">Strings</span> <span class="pre">and</span> <span class="pre">Character</span> <span class="pre">Data</span> <span class="pre">Quiz</span> <span class="pre">&lt;https://realpython.com/quizzes/python-strings/&gt;</span></code>_</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Splitting,</span> <span class="pre">Concatenating,</span> <span class="pre">and</span> <span class="pre">Joining</span> <span class="pre">Strings</span> <span class="pre">in</span> <span class="pre">Python</span> <span class="pre">Quiz</span> <span class="pre">&lt;https://realpython.com/quizzes/python-split-strings/&gt;</span></code>_</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Command</span> <span class="pre">line</span> <span class="pre">Crash</span> <span class="pre">Course</span> <span class="pre">&lt;_static/CommandLineCrashCourse.pdf&gt;</span></code>_</p></li>
 </ul>
 </section>
+<section id="referenceliste">
+<h2>Referenceliste<a class="headerlink" href="#referenceliste" title="Link to this heading">#</a></h2>
+<p>Her under har du a samlet liste af alle links og eksterne resourcer brugt her på siden.</p>
+</section>
 </section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Introduktion til Python efterår 2025" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-    </div>
+                </article>
+              
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2025, clbo.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
-        </div>
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduktion til Python efterår 2025</p>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-</body>
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laeringsmal">Læringsmål</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dagen-i-dag">Dagen i dag</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quizes">Quizes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referenceliste">Referenceliste</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By clbo
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, clbo.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
 </html>
