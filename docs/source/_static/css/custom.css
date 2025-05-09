@@ -6,6 +6,11 @@
     display: none;
 } 
 
+.relbar {
+    display: none;
+}
+
+
 /* Toctree  */
 /*
 .toctree-l1 ul { 
