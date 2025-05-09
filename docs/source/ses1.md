@@ -31,7 +31,7 @@ I den anden del skal vi i gang med at kode. I vil begynde at blive fortrolige me
 
 ## Dagen i dag
 
-Vi starter med at gå igennem disse [slides](materialer/notes01.html)
+Vi starter med at gå igennem disse [slides](_materialer/intro_slides.html)
 
 Materials
 ---------
